@@ -1,0 +1,36 @@
+// program written to display the name,mark,total and average marks of a student
+
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+ /*input the name */
+  char name[20];
+  printf("Name of the student:\n",name);
+  scanf("%s",&name);
+  
+  /*input the mark */
+  float eng,maths,phy;
+  printf("Enter the marks:\n",eng,maths,phy);
+  scanf("%f%f%f",&eng,&maths,&phy);
+  
+  /*total marks*/
+  float total;
+  total=eng+maths+phy;
+  
+  /*average*/
+  float average;
+  average=total/3;
+  
+  
+  /*display total marks and average*/
+  printf("total marks:%f\n",eng+maths+phy);
+  printf("average:%f",total/3);
+  
+ 
+  return 0;
+   
+} 
+ 
